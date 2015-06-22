@@ -4,3 +4,9 @@ The menus for the ubuntu server
 1) to register a new upstart service restart
 edit file in /etc/init/service_name.conf
 initctl reload-configuration
+
+service --status-all
+service <service name> stop
+sudosysv-rc-conf
+
+/etc/init.d/service stop|start
